@@ -1,8 +1,8 @@
-import fetch from "node-fetch";
-
 export default async function handler(req, res) {
   const prompt = req.query.prompt || "Hello from DeepSeek!";
-  const HF_TOKEN = process.env.HF_TOKEN;
+
+  // 🔐 Your Hugging Face Token (hardcoded)
+  const HF_TOKEN = "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";
 
   const response = await fetch("https://api-inference.huggingface.co/models/deepseek-ai/deepseek-llm-7b-base", {
     method: "POST",
