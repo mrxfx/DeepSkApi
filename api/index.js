@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const prompt = req.query.prompt || "Hello from DeepSeek!";
-  const HF_TOKEN = "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";
+  const HF_TOKEN = "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";
 
   const response = await fetch("https://api-inference.huggingface.co/models/deepseek-ai/deepseek-llm-7b-base", {
     method: "POST",
